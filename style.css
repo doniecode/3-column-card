@@ -1,0 +1,172 @@
+:root{
+/*Primary*/
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/*Neutral*/
+--Transparent-white:hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/*reset*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  background-color: var(--Very-light-gray);
+  color: var(--Transparent-white);
+}
+
+.container{
+  width: 60%;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
+/*reset ends here*/
+.cards-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.orange{
+  background-color: var(--Bright-orange);
+}
+
+.dark-cyan{
+  background-color: var(--Dark-cyan);
+}
+
+.very-dark-cyan{
+  background-color: var(--Very-dark-cyan);
+}
+
+.icon{
+  width: 40px;
+  height: 25px;
+}
+
+.card-title{
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: var(--Very-light-gray);
+  font-size: 1.6em;
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-text{
+  color: var(--Transparent-white);
+  opacity: 0.8;
+  font-size: 0.6rem;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+.btn{
+  display: inline;
+  background-color: var(--Very-light-gray);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  width: 70%;
+  font-weight: 400;
+}
+
+.btn-sedan{
+  color: var(--Bright-orange);
+}
+
+.btn-suv{
+  color: var(--Dark-cyan);
+}
+
+.btn-luxury{
+  color: var(--Very-dark-cyan);
+}
+
+
+.attribution{
+  text-align: center;
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.attribution a{
+  color: #00bb;
+}
+
+
+/*mobile-view*/
+@media(min-width: 375px) and (max-width:768px){
+  .cards-wrapper{
+    grid-template-columns: 1fr;
+    margin: 50px 20px;
+  }
+  
+  .container{
+    width: 100%;
+  }
+  
+  .btn{
+    width: 70%;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+  }
+  
+  .card{
+    padding: 40px;
+  }
+  
+  .icon{
+    width: 100px;
+    height: 65px;
+  }
+  
+  .card-title{
+    font-size: 3em;
+  }
+  
+  .card-text{
+    font-size: 1.3rem;
+  }
+  
+
+  .attribution{
+   text-align: center;
+   color: #000;
+   font-size: 1rem;
+   margin-bottom: 20px;
+  }
+
+  .attribution a{
+   color: #00bb;
+  }
+}
+
+
