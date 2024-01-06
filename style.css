@@ -107,6 +107,12 @@ a{
   color: var(--Very-dark-cyan);
 }
 
+.btn:hover{
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 73%;
+}
 
 .attribution{
   text-align: center;
